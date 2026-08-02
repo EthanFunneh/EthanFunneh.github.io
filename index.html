@@ -7,6 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+  @font-face {
+    font-family: "Mister Twisted";
+    src: url("mister_twisted.ttf") format("truetype");
+}
   :root{
     --bg: #10131a;
     --panel: #171b24;
@@ -73,7 +77,15 @@
     padding:10px 14px;
     background:var(--panel-2);
     border-bottom:1px solid var(--line);
-  }
+@font-face {
+    font-family: "Mister Twisted";
+    src: url("mister_twisted.ttf") format("truetype");
+}
+
+.name {
+    font-family: "Mister Twisted", sans-serif;
+}
+}
   .dot{ width:11px; height:11px; border-radius:50%; }
   .dot.r{ background:#ff5f57; } .dot.y{ background:#febc2e; } .dot.g{ background:#28c840; }
   .term-title{ margin-left:auto; margin-right:auto; font-family:var(--mono); font-size:12px; color:var(--muted); transform:translateX(-16px); }
@@ -113,13 +125,13 @@
   :root[data-theme="light"] .theme-toggle .icon-moon{ display:block; }
 
   .name-row{ position:relative; display:inline-flex; align-items:center; gap:18px; margin:36px 0 6px; }
-  .name{
-    font-family:var(--mono);
+.name{
+    font-family:"Mister Twisted", sans-serif;
     font-size:clamp(32px,6vw,52px);
-    font-weight:700;
+    font-weight:normal;
     letter-spacing:-0.01em;
     margin:0;
-  }
+}
   .cat-badge{
     height:72px;
     width:72px;
@@ -274,7 +286,7 @@
       <img class="cat-badge cat-dark" src="big_guy.png" alt="Big Guy the cat">
       <img class="cat-badge cat-light" src="tumtum.png" alt="Tumtum the cat">
     </div>
-    <p class="tagline">Student tinkering in cybersecurity and computer science. I build web tools, mod games, run servers, and take apart things I'm not supposed to.</p>
+    <p class="tagline"></p>
 
     <nav class="dirs">
       <a href="#about">about</a>
@@ -304,7 +316,7 @@ I am the owner of 4 cats, and currently study cyber security. I know some python
     <h2 class="section-title">projects</h2>
     <div class="projects">
 
-      <a class="card" href="https://github.com/EthanFunneh/EthanFunneh.github.io" target="_blank" rel="noopener">
+      <a class="card" href="https://ethanfunneh.github.io/DOOM.html" target="_blank" rel="noopener">
         <div class="card-head"><h3>DOOM~HTML</h3><span class="stack">HTML</span></div>
         <p>Personal project. Made it an html so it would run on macOS, Windows and most linux distros. I used dwasm. I just keep it on a small 4gb usb stick wiht a doom sticker on it.</p>
       </a>
